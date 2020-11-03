@@ -96,7 +96,7 @@ function draw() {
 
   lbox1.display();
   dbox1.display();
-  
+  console.log(d);
  noStroke();
 textSize(20);
 text("Press Hold the ploygon backwards",400,100);
