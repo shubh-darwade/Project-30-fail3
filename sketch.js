@@ -104,7 +104,10 @@ text("Press Hold the ploygon backwards",400,100);
 }
 
 function mouseDragged() {
-  Body.setPosition(polygon1.body,{x:mouseX,y:mouseY})
+  if(d===2)
+  {
+  Body.setPosition(polygon1.body,{x:mouseX,y:mouseY});
+  }
 }
 function mouseReleased() {
  d=2;
@@ -115,6 +118,7 @@ function keyPressed()
 {
   if(keyCode === 32)
   {
+    d=1;
      Body.setPosition(polygon1.body,{x:300,y:250});
      chain1.chain.bodyA=polygon1.body;       
    
